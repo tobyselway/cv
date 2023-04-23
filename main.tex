@@ -1,0 +1,245 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Toby}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Selway}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Full-Stack Senior Developer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Tomar, PT}\\
+	\icon{Phone}{12}{+351 967 344 234}\\
+	\icon{At}{12}{\href{mailto:tobyselway@outlook.com}{tobyselway@outlook.com}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Globe}{12}{\href{https://selway.me}{selway.me}}\\
+	\icon{Github}{12}{\href{https://github.com/tobyselway}{github.com/tobyselway}}\\
+	\icon{Twitter}{12}{\href{https://twitter.com/@TjasPRG}{@TjasPRG}}\\
+\end{minipage}
+
+\vspace{0.4cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	Full-Stack Web and Embedded Firmware developer, passionate about software architecture and open-source.\\
+        Always up for a new challenge, constantly learning and evolving, with a love for teaching and teamwork.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+    		\baritem{PHP}{100}
+    		\baritem{JavaScript}{95}
+    		\baritem{C/C++}{75}
+    		\baritem{Git}{75}
+    		\baritem{SQL}{80}
+	\end{barchart}
+\end{minipage}
+
+\vspace{0.4cm}
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Technologies / Skills}
+
+         \begin{minipage}[t]{0.4\textwidth}
+        	\vspace{-\baselineskip} % Required for vertically aligning minipages
+        	
+        	Laravel\\
+        	Vue.js\\
+                FreeRTOS\\
+                ESP IDF\\
+                Ionic\\
+                MySQL\\
+                WebSockets
+        \end{minipage}
+        \hfill
+        \begin{minipage}[t]{0.4\textwidth}
+        	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+        	Node.js\\
+        	OpenGL\\
+                LVGL\\
+        	Tailwind CSS\\
+                Linux\\
+                Git\\
+                GraphQL
+        \end{minipage}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Strengths}
+
+        Mentor\\
+        Problem Solver\\
+        Clean Code Enthusiast\\
+        Allergic to Peanuts
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Motivation}
+
+        Persuit of Knowledge\\
+        Self-Improvement\\
+        Teamwork\\
+        Latest Tech
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Currently Learning}
+
+        Rust\\
+        Kernel Development\\
+        Compiler Design\\
+        Golang\\
+        gRPC and Protobuf\\
+        Event Sourcing
+\end{minipage}
+
+\hfill\\
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{1/2021 -- present\\\footnotesize{full-time}}
+		{Full-Stack and Firmware Developer}
+		{RedFénix Engenharia, Lda.}
+		{Full-Stack web (including maintenance of internal PHP framework), mobile, and low-level firmware development for embedded hardware solutions. Lead the migration of multiple applications to Laravel. Worked on real-time and event-driven platforms, including architecture and scaling. Onboarding, training, and teaching of interns. \\ \texttt{Laravel}\slashsep\texttt{Vue.js}\slashsep\texttt{FreeRTOS}\slashsep\texttt{ESP IDF}\slashsep\texttt{LVGL}\slashsep\texttt{Ionic}\slashsep\texttt{MySQL}\slashsep\texttt{Linux}}
+	\entry
+		{9/2017 -- present\\\footnotesize{freelance}}
+		{Software Consultant}
+		{}
+		{Software consulting and development for a variety of industries and use-cases, mostly focused on web and mobile.\\ \texttt{Laravel}\slashsep\texttt{Vue.js}\slashsep\texttt{MySQL}\slashsep\texttt{Ionic}\slashsep\texttt{Tailwind CSS}}
+        \entry
+		{3/2017 -- 8/2017\\\footnotesize{internship}}
+		{Junior Software Engineer}
+		{Softinsa}
+		{Assisted in coordinating a development team working on internal software solutions.\\ \texttt{PHP}\slashsep\texttt{JS}\slashsep\texttt{MySQL}\slashsep\texttt{Bootstrap}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2018 -- interrupted}
+		{Licentiate (EQF level 6)}
+		{Instituto Politécnico de Tomar}
+		{Computer Engineering\\Interrupted to pursue more advantageous career opportunities}
+        \entry
+		{2016 -- 2018}
+		{Professional Higher Technical Course (cTESP - EQF level 5)}
+		{Instituto Politécnico de Tomar}
+		{Information Systems Technology and Programming\\Activities and societies: Núcleo de Estudantes de Engenharia Informática}
+	\entry
+		{2013 -- 2016}
+		{Professional Course (EQF level 4)}
+		{Escola Secundária Jácome Ratton}
+		{Management and Programming of Computer Systems}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.2\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{English} - native\\
+	\textbf{Português} - native
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+        Linux and Open-Source Enthusiast\\	
+        Singer/Songwriter\\
+        Hamburger Enthusiast\\
+        Living Statue
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.4\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Events}
+	
+	Volunteer @ WebSummit\\
+        Attendee @ Laracon Online\\
+        Attendee @ Future.Works Tech Conference
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
